@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+/* Navbar */
+header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 5%;
+}
+nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+h1 {
+  text-transform: uppercase;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+/* contenu article */
+main {
+  display: flex;
+  margin-top: 10px;
+  width: 100vw;
+  gap: 20px;
+  height: 80%;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.main_left {
+  width: 80%;
+}
+.main_left a {
+  text-decoration: none;
+  color: red;
+  float: right;
+}
+/* liste droite */
+aside {
+  background-color: grey;
+  border-radius: 5px;
+  height: fit-content;
+  width: 20%;
+}
+aside ul {
+  margin: 5px 5px;
+}
+aside li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+aside a {
+  text-decoration: none;
+  color: black;
+}
+/* Footer */
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 15%;
+  display: flex;
+}
+.partenaire ul {
+  list-style: none;
+}
+.partenaire li a {
+  text-decoration: none;
+  color: grey;
+  margin-left: 20px;
+}
+.contact {
+  margin-left: auto;
+  margin-top: auto;
+}
+.contact a {
+  color: grey;
+  text-decoration: none;
+}
+
+/* Page tech main left */
+.main_left_tech {
+  width: 70%;
+}
+.main_left_tech a {
+  text-decoration: none;
+  color: red;
+  float: right;
+}
+.image {
+  width: 30%;
+}
+img {
+  width: 0;
+  min-width: 100%;
+}
