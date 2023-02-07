@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100vw;
+  display: flex;
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(222, 222, 222);
+}
+.logo {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+/* NavBar en flexbox */
+nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.home,
+.company,
+.portfolio,
+.products,
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+h2 {
+  text-transform: uppercase;
+  color: grey;
+}
+nav a {
+  text-decoration: none;
+  color: grey;
+}
+.home span {
+  width: 100px;
+  height: 5px;
+  background-color: orange;
+}
+.company span {
+  width: 140px;
+  height: 5px;
+  background-color: yellow;
+}
+.portfolio span {
+  width: 160px;
+  height: 5px;
+  background-color: green;
+}
+.products span {
+  width: 145px;
+  height: 5px;
+  background-color: blue;
+}
+.blog span {
+  width: 100px;
+  height: 5px;
+  background-color: violet;
+}
+/* gallery + articles flex*/
+.gallery,
+.articles {
+  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-top: solid 1px rgb(222, 222, 222);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  border-bottom: solid 1px rgb(222, 222, 222);
+}
+figure {
+  width: 300px;
+  height: 600px;
+  border: solid 1px rgb(222, 222, 222);
+}
+figure img {
+  width: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 0;
+  min-height: 100%;
+  padding: 10px;
+}
+/* texte central */
+.text {
+  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(222, 222, 222);
+  text-align: center;
+}
+/* articles principaux */
+.left_article,
+.middle_article {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 15px;
+  padding: 20px;
+}
+.left_article {
+  border: solid 1px rgb(222, 222, 222);
+  box-shadow: 5px 5px 5px 0px rgba(160, 160, 160, 0.8);
+}
+.middle_article {
+  gap: 40px;
+}
+.right_article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+.middle_article div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+h3 {
+  text-transform: uppercase;
+  color: orange;
+}
+.articles i {
+  color: rgb(222, 222, 222);
+}
+.articles p {
+  color: grey;
+}
+/* navbar version téléphone */
+@media screen and (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+  h2 {
+    display: none;
+  }
+  nav a {
+    display: none;
+  }
+  .company span,
+  .portfolio span,
+  .products span {
+    width: 100px;
+  }
+}

@@ -57,7 +57,8 @@ main {
   background: black;
   border-radius: 0 0 50px 50px;
   position: relative;
-  left: 175px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 250px;
 }
 .nez {
@@ -70,7 +71,8 @@ main {
   border-right-color: transparent;
   border-bottom-color: transparent;
   position: absolute;
-  left: 275px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 200px;
 }
 .oeil_blanc_l {
