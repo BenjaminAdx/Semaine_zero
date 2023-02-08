@@ -110,7 +110,7 @@ figure img {
 .middle_article {
   display: flex;
   flex-direction: column;
-  width: 340px;
+  width: 400px;
   gap: 15px;
   padding: 20px;
 }
@@ -141,6 +141,34 @@ h3 {
 }
 .articles p {
   color: grey;
+}
+/* Top footer */
+.top_footer {
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  background-color: rgb(222, 222, 222);
+}
+.footer_article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 281.25px;
+}
+.footer_article ul {
+  list-style: none;
+}
+h4 {
+  text-transform: uppercase;
+  color: rgba(160, 160, 160);
+}
+.footer_article a,
+.footer_article i {
+  color: rgba(160, 160, 160);
 }
 /* navbar version téléphone */
 @media screen and (max-width: 1000px) {
