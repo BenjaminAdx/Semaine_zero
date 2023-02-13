@@ -369,9 +369,7 @@ function sommeImpair(n) {
     return tableau.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue)
 }
 
-console.log(sommeImpair(3))
-console.log(sommeImpair(7))
-console.log(sommeImpair(59))
+
 
 /*************************************************************************
  Exercice 12
