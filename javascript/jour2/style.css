@@ -1,0 +1,21 @@
+@keyframes etirer {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 200px;
+  }
+}
+#chargement {
+  height: 20px;
+  width: 200px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+.greenlight {
+  height: 20px;
+  background-color: green;
+  animation: 1s etirer;
+  border-radius: 15px;
+}
