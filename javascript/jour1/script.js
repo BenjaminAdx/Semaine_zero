@@ -366,7 +366,7 @@ function sommeImpair(n) {
         if (i % 2 != 0) { tableau.push(i) }
     }
     const initialValue = 0
-    return tableau.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue)
+    return tableau.reduce((a, c) => a + c, initialValue)
 }
 
 
@@ -385,11 +385,10 @@ isSameCase("gerard") ➞ true
  
 isSameCase("TOURRES") ➞ true
 */
-str = TOURRES
+
 function isSameCase(str) {
-    let c = str.toLowerCase()
-    let d = str.toUpperCase()
-    return (str === c || str === d)
+
+    return (str === str.toLowerCase() || str === str.toUpperCase())
 
 }
 
@@ -423,7 +422,7 @@ function bissextile(year) {
     return year % 400 === 0 || year % 4 === 0 && year % 100 !== 0;
 }
 
-/*
+/********************************************* Excercice 14
 Écrivez une fonction pour inverser un tableau. Attention: N’utilisez pas la méthode intégrée reverse();
  
 Exemple:
@@ -431,16 +430,22 @@ reverseTab([1, 2, 3]) ➞ [3, 2, 1]
  
 reverseTab([1, 1, 2, 2, 3]) ➞ [3, 2, 2, 1, 1]
 */
+
 function reverseTab(tab) {
-    // Écrivez votre code ici
+    let d;
+    let tab2 = [];
+    for (i = tab.length; i > 0; i -= 1) {
+        d = tab.pop();
+        tab2.push(d);
+    }
+    return tab2
 }
 
-// Afficher la sortie
 console.log(reverseTab([1, 2, 3]));
 console.log(reverseTab([1, 1, 2, 2, 3]));
 
 
-/*
+/*******************************************Excercice 18
 Créez une fonction qui prend un tableau et renvoie le dernier élément du tableau.
  
 Exemple:
@@ -452,7 +457,7 @@ getLastElem([‘Alex’, ‘Bob’, ‘Emily’]) ➞ ‘Emily’
 */
 
 function getLastElem(tab) {
-    // Écrivez votre code ici
+    return tab.pop()
 }
 
 // Afficher la sortie
