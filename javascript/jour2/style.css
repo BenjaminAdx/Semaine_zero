@@ -19,3 +19,26 @@
   animation: 1s etirer;
   border-radius: 15px;
 }
+
+.pop-up {
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  width: 500px;
+  height: 500px;
+  border-radius: 15%;
+  background-color: beige;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up img {
+  width: 250px;
+  height: 250px;
+}
+.apparaitre {
+  display: flex;
+  transition: all 2s;
+  transition-timing-function: ease-in-out;
+}
