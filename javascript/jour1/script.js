@@ -55,7 +55,7 @@ function getMax(a, b, c) {
     else if (b == c) { return b }
 }
 
-console.log(getMax(1, 5, 5));
+console.log(getMax(1, 5, 1));
 console.log(getMax(2, 3, 10));
 
 /* fonction max la plus rapide */
@@ -175,11 +175,13 @@ nbrExist([], 0) ➞ false
 */
 
 function nbrExist(tab, val) {
-    {
-        for (i = 0; i < tab.length; i++)
-            if (val == tab[i]) { return true }
+
+    for (i = 0; i < tab.length; i++) {
+        if (val == tab[i]) {
+            return true;
+        }
     }
-    return false
+    return false;
 }
 
 console.log(nbrExist([6, 7, 8], 7))
@@ -203,12 +205,16 @@ checkS("Elvis") ➞ true
  */
 
 function checkS(str) {
-    return (str.endsWith("s"))
+    return str.endsWith("s")
 }
 
 
 function checkS(str) {
-    return (str[str.length - 1] == "s")
+    return str[str.length - 1] == "s"
+}
+
+function checkS(str) {
+    return str.at(-1) == 's';
 }
 
 console.log(checkS("Thomas"))
@@ -291,9 +297,8 @@ addEnd(["aim", "act", "ard"], "ant") ➞ ["aimant", "actant", "ardant"]
 */
 
 function addEnd(tableau, fin) {
-    for (i = 0; i <= tableau.length; i++) {
-        return tableau.map(x => x + fin)
-    }
+
+    return tableau.map(x => x + fin)
 }
 
 console.log(addEnd(["accept", "achet", "adapt"], "able"))
@@ -368,7 +373,7 @@ function sommeImpair(n) {
     const initialValue = 0
     return tableau.reduce((a, c) => a + c, initialValue)
 }
-
+console.log(sommeImpair(1))
 
 
 /*************************************************************************
@@ -463,6 +468,8 @@ function getLastElem(tab) {
 // Afficher la sortie
 console.log(getLastElem([1, 2, 3, 4]));
 console.log(getLastElem(["Alex", "Bob", "Emily"]));
+
+/* Yaniss Excercice */
 
 var note_maths = 15;
 var note_francais = 12;
