@@ -28,19 +28,24 @@ function submitNumber() {
             lastResult.style.color = "green";
             lastResult.textContent = "Bravo";
             guessCount++;
-            guessSubmit.disabled = true;
-            lowOrHi.innerHTML = "<button class='reset'>Reset</button>";
+            gameover();
             resetall();
         }
     }
     else {
         lastResult.textContent = "Game Over";
-        guessSubmit.disabled = true;
-        lowOrHi.innerHTML = "<button class='reset'>Reset</button>";
+        gameover();
         resetall();
     }
     guessField.value = "";
+    guessField.focus();
 };
+/* fonction game over à appeler*/
+function gameover() {
+    guessSubmit.disabled = true;
+    lowOrHi.innerHTML = "<button class='reset'>Reset</button>";
+
+}
 /* fonction reset à appeler */
 function resetall() {
     let resetButton = document.querySelector(".reset");
