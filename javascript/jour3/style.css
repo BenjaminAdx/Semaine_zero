@@ -36,7 +36,7 @@ nav {
     margin-top: 4px;
     transition: 0.4s;
   }
-  .links a {
+  .links {
     display: none;
   }
 
@@ -52,23 +52,18 @@ nav {
     transition: 0.4s;
     margin-top: -5px;
   }
-  .linkson {
-    display: block !important;
-  }
-  .links {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-  }
+
   .linksposition {
     position: absolute;
     top: 60px;
     background-color: coral;
     width: 100%;
-    height: 250px;
+    height: calc(100vh - 60px);
     left: 0;
-    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
   }
 }
